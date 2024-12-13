@@ -1,0 +1,273 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #0B3B0B;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.contactPage{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pageHeader{
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.pageContent{
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 20px; 
+}
+
+.homePage{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  scroll-behavior: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.homePage .pageHeader{
+  height: 20vh;
+}
+.homePage .pageContent{
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 3fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: end;
+  align-items: end;
+}
+
+.aboutMeBody{
+  width: 80vw;
+  display: grid;
+  grid-area: 2/2/3/3;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: large;
+}
+
+.aboutMeTech{
+  display: grid;
+  grid-area: 3/2/4/3;
+  justify-content: center;
+}
+
+.contactFooter{
+  display: grid;
+  grid-area: 4/1/5/3;
+}
+
+.navigationButtons{
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: end;
+  padding: 20px;
+  margin: 10;
+}
+
+.projectsCarousel{
+  background-color: rgb(255, 255, 255);
+  width: 90vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+  overflow: scroll;
+}
+
+.projectCard{
+  background-color: hsla(120, 45%, 96%, 0.892);
+  border-color: rgb(5, 92, 26);
+  border-style: solid;
+  border-width: 2px;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 5px;
+  color:rgb(5, 92, 26);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projectCard iframe{
+  display: flex;
+  align-self: center;
+}
+
+.resumePage .pageHeader{
+  width: 100vw;
+  height: 25 vh;
+}
+.resumePage .pageContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto visible;
+  margin: 0px;
+  background-color: white;
+}
+
+.resumeCard{
+  width: 90%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px darkgreen solid;
+}
+.schoolHeading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experienceHeading{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sectionheader{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px
+}
+
+.helloworldContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto visible;
+  margin: 0px;
+  background-color: white;
+}
+
+.hwsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
