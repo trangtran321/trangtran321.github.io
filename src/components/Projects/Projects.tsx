@@ -41,7 +41,7 @@ export default function Projects(){
                     url="yYiwxYqQ9vg?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ" 
                     title="Hello, World" 
                     description="This native iOS appliation is allows users to add recommendations into lists and receive notifications when they are in proximity of a previously saved location."
-                    goto="#/Helloworld"
+                    goto="/Helloworld"
                 >
                     <p>
                         Technologies Used: Expo & React Native - iOS, Typescript
