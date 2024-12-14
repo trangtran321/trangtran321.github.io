@@ -1,4 +1,5 @@
-import { Icon, Link } from '@chakra-ui/react';
+import { Icon } from '@chakra-ui/react';
+import {Link} from 'react-router-dom';
 import {IoArrowForwardOutline} from 'react-icons/io5'
 
 interface Props{
@@ -7,7 +8,7 @@ interface Props{
     onClick?: ()=>void;
     description: string;
     url?: string
-    goto?: string
+    goto: string
 }
 
 export default function ProjectCard(props: Props){
@@ -26,7 +27,7 @@ export default function ProjectCard(props: Props){
                     fontWeight: "bolder",
                     fontSize: 20
                 }}>{props.title}</h2>
-                <Link href={props.goto}>
+                <Link to={props.goto}>
                     <p style={{color:"#0B3B0B"}}>Check it out</p>
                     <Icon>
                         <IoArrowForwardOutline size={50} color='#0B3B0B'/>

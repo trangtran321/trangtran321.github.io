@@ -13,19 +13,19 @@ export const router = createHashRouter([
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/AboutMe",
+        path: "#/AboutMe",
         element: <AboutMe/>,
       },
       {
-        path: "/Projects",
+        path: "#/Projects",
         element: <Projects/>,
       },
       {
-        path: "/Resume",
+        path: "#/Resume",
         element: <Resume/>,
       },
       {
-        path: "/Helloworld",
+        path: "#/Helloworld",
         element: <Helloworld/>
       }
 ])
