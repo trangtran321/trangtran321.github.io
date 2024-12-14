@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import HomePage from './components/Homepage';
 import ErrorPage from './components/ErrorPage';
 import AboutMe from './components/AboutMe';
@@ -6,26 +6,26 @@ import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
 import Helloworld from "./components/Projects/Helloworld";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/",
         element: <HomePage/>,
         errorElement: <ErrorPage/>,
       },
       {
-        path: "AboutMe",
+        path: "/AboutMe",
         element: <AboutMe/>,
       },
       {
-        path: "Projects",
+        path: "/Projects",
         element: <Projects/>,
       },
       {
-        path: "Resume",
+        path: "/Resume",
         element: <Resume/>,
       },
       {
-        path: "Helloworld",
+        path: "/Helloworld",
         element: <Helloworld/>
       }
 ])
