@@ -39,7 +39,7 @@ export default function Homepage(){
                     {/* Projects Page */}
                     <a className='projectsButton'> <Link to={"/Projects"}> Projects </Link> </a>
                     {/* Contact Me Page */}
-                    <a className='contactButton'> <Link to={"/Resume"}> Resume </Link> </a>
+                    <a className='contactButton'> <Link to={"Resume"}> Resume </Link> </a>
                 </div>
             </div>
             <div className="pageContent" style={{margin: 0
