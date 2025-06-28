@@ -40,14 +40,23 @@ export default function Projects(){
                 <ProjectCard 
                     url="yYiwxYqQ9vg?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ" 
                     title="Hello, World" 
-                    description="This native iOS appliation is allows users to add recommendations into lists and receive notifications when they are in proximity of a previously saved location."
+                    description="This native iOS appliation allows users to add recommendations into lists and receive notifications when they are in proximity of a previously saved location."
                     goto="/Helloworld"
                 >
-                    <p>
+                    <p style={{padding: 5}}>
                         Technologies Used: Expo & React Native - iOS, Typescript
                     </p>
-                    <p>
+                    <p style={{padding: 5}}>
                         APIs Used: Google Firestore API, Googe Maps SDK API, Google Places API
+                    </p>
+                </ProjectCard>
+                <ProjectCard
+                    url="https://denim-happy-moth-257.vscodeedu.app/#rsvp"
+                    title="Bunbury Bakery Grand Opening Site"
+                    description="A one-page website that advertises the grand opening of a small bakery. It showcases events occurring during opening weekend, RSVP capabilities and links to outside vendors."
+                    goto="/Bunbury">
+                    <p style={{padding: 5}}>
+                        Technologies Used: Vanilla Javascript, HTML:5, CSS 
                     </p>
                 </ProjectCard>
                 {/* <ProjectCard url="yYiwxYqQ9vg?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ" title="Youtube Video" description="This is an example"/>

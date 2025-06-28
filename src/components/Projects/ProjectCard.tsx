@@ -27,7 +27,7 @@ export default function ProjectCard(props: Props){
                     fontWeight: "bolder",
                     fontSize: 20
                 }}>{props.title}</h2>
-                <Link to={props.goto}>
+                <Link to={props.goto} style={{display: "flex", flexDirection: "row"}}>
                     <p style={{color:"#0B3B0B"}}>Check it out</p>
                     <Icon>
                         <IoArrowForwardOutline size={50} color='#0B3B0B'/>
